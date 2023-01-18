@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ {{>header_links}}
+</head>
+
+<body>
+  {{>navbar}}
+
+
+  <div class="containter-fluid main_menu">
+    <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+        <!-- left part of header -->
+        <div class="row">
+          <div class="col-sm-6">
+            <div>
+              <div class="card-body" style="font-size: large; ">
+                <br><br><br>
+                <p>Welcome to Weather app...</p>
+                
+                <br>
+                <h2>This is Dynamic App which Shows you the real time Data of the city you Enter</h2>
+                <h2>this includes tempreture, city name, humidity, pressure, status of atmosphere and all of these are combined in a very interective environment</h2>
+                <h2>this app has the capability to show real time data of any valid city across the globe</h2>
+                <br>
+                <h1>Get the latest <span style="color: blue; "> Weather </span> information of your city</h1>
+                <br>
+                
+                <div><a href="/weather"><button class="button_clikme">Check now</button></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div>
+              <div class="card-body">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/p5.png" class=" w-100" alt="first image">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/p2 .png" class=" w-100" alt="second image">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/p3.png" class=" w-100" alt="third image">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/p4.png" class=" w-100" alt="fourth image">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/p5.png" class=" w-100" alt="fifth image">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>copyright © Aditya Sharma</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Kanit&family=Mukta:wght@300&family=Noto+Serif&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+.body {
+    text-transform: capitalize;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    min-height: 100vh;
+    background-image: url(images/n3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.row {
+    margin: 0;
+}
+
+.main_header {
+    background-color: rgba(37, 36, 36, 0.904);
+}
+
+footer {
+    text-align: center;
+    color: azure;
+    background-color: rgb(43, 42, 42);
+    line-height: 5rem;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 100vw;
+}
+
+.navbar {
+    font-size: large;
+    padding: 2vh 4vh;
+}
+
+.navbar li {
+    margin-left: 2vw;
+}
+
+.navbar-nav {
+    margin-left: 0;
+}
+
+.heading {
+    font-size: x-large;
+}
+
+.button_clikme {
+    font-size: medium;
+    padding: 4px 35px;
+    border-radius: 10px;
+    border-color: rgb(198, 196, 192);
+    box-shadow: 3px 3px 2px rgb(27, 27, 27);
+}
+
+figure img {
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
+}
+.error {
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+    height: 70vh;
+
+}
+
+.errorimage {
+    margin: auto;
+}
+
+.main_content {
+    display: flex;
+    justify-content: center;
+}
+
+.temp_form {
+    align-items: center;
+}
+
+#cityname {
+    width: 40vw;
+    height: 6vh;
+    font-size: medium;
+    margin: 5vh 0vh;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px rgb(156, 153, 153);
+    padding: 1vh 1vh 1vh 3vh;
+    
+}
+
+#submitBtn {
+    background-color: rgb(0, 82, 245);
+    color: azure;
+    height: 6vh;
+    font-size: medium;
+    width: 10vw;
+    border-radius: 4px;
+    margin-left: 1.6vw;
+    box-shadow: 2px 3px 5px rgb(156, 153, 153);
+    border-color: rgb(146, 175, 231);
+
+}
+
+.displaydata {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    align-items: center;
+    padding: 5vh;
+}
+
+.daydate {
+    height: 7vh;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 10vw auto 10vw;
+    align-items: center;
+    font-size: large;
+    font-weight: 700;
+}
+
+#day {
+    padding-left: 3vw;
+}
+
+#today_data {
+    padding-left: 3vw;
+}
+
+.displaytempdata {
+    height: 7vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    font-weight: 700;
+    margin-bottom: 2vh;
+
+}
+
+.initialreq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tempdetail {
+    height: 20vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: large;
+    font-weight: 700;
+}
+
+#temp {
+    padding-left: 4vw;
+    font-size: 40px;
+    width: 50%;
+}
+
+#temp_status {
+    padding: 6vw;
+    width: 50%;
+    font-size: 100px;
+
+}
+
+.hum_pre {
+    height: 15vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: large;
+    font-weight: 700;
+}
+
+#hum {
+    padding: 5vw;
+    width: 50%;
+    font-size: 30px;
+}
+
+#pre {
+    padding: 5vw;
+    width: 50%;
+    font-size: 30px;
+}
+
+#time {
+    margin-top: 2vh;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .body {
+        text-transform: capitalize;
+        position: relative;
+        width: 100vw;
+        overflow: hidden;
+        min-height: 100vh;
+        background-image: url(images/rn1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #cityname {
+        width: 50vw;
+        height: 4vh;
+        font-size: small;
+        margin: 5vh 0vh;
+        background-color: rgb(43, 42, 42);
+        color: white;
+        border-radius: 5px;
+        box-shadow: 2px 3px 5px rgb(156, 153, 153);
+        padding: 1vh 1vh 1vh 3vh;
+    }
+
+    #submitBtn {
+        background-color: rgb(0, 82, 245);
+        color: azure;
+        height: 4vh;
+        font-size: medium;
+        width: 20vw;
+        border-radius: 4px;
+        margin-left: 1.6vw;
+        box-shadow: 2px 3px 5px rgb(156, 153, 153);
+        border-color: rgb(146, 175, 231);
+
+    }
+
+    .displaydata {
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        color: rgb(201, 198, 198);
+        align-items: center;
+        padding: 5vh;
+    }
+
+    .daydate {
+        height: 7vh;
+        width: 70vw;
+        display: grid;
+        grid-template-columns: 20vw auto 20vw;
+        align-items: center;
+        font-size: medium;
+        font-weight: 500;
+    }
+
+    #day {
+        padding-left: 3vw;
+    }
+
+    #today_data {
+        padding-left: 3vw;
+    }
+
+    .displaytempdata {
+        height: 7vh;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: large;
+        font-weight: 700;
+        margin-bottom: 2vh;
+
+    }
+
+    .initialreq {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tempdetail {
+        height: 20vh;
+        width: 70vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    #temp {
+        padding-left: 4vw;
+        font-size: 16px;
+        width: 50%;
+    }
+
+    #temp_status {
+        padding: 6vw;
+        width: 50%;
+        font-size: 50px;
+
+    }
+
+    .hum_pre {
+        height: 15vh;
+        width: 70vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    #hum {
+        padding: 5vw;
+        width: 50%;
+        font-size: 15px;
+    }
+
+    #pre {
+        padding: 5vw;
+        width: 50%;
+        font-size: 15px;
+    }
+
+    #time {
+        margin-top: 2vh;
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header_links}}
+</head>
+
+<body class="body">
+    {{>navbar}}
+    <div class="container-fluid main-header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form class="temp_form">
+                        <input type="text" id="cityname" placeholder="EnteFr ypur city name" autocomplete="off" />
+                        <input type="submit" value="search" id="submitBtn">
+                    </form>
+                </div>
+                <div class="displaydata">
+                    <div class="daydate">
+                        {{!-- day --}}
+                        <div id="day"></div>
+                        <div></div>
+                        {{!-- date --}}
+                        <div id="today_data"></div>
+                    </div><br>
+                    <div class="displaytempdata">
+                        {{!-- cityname --}}
+                        <div class="initialreq">
+                            <div id="city_name">please Enter city name</div>
+                        </div>
+                        <div class="tempdetail">
+                            {{!-- temp --}}
+                            <div id="temp"></div>
+                            {{!-- symbole --}}
+                            <div id="temp_status">
+                                {{!-- <i class="fa-solid fa-cloud"></i> --}}
+                            </div>
+                        </div>
+                        <div class="hum_pre">
+                            <div id="hum"></div>
+                            <div id="pre"></div>
+                        </div>
+                        <div id="time"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>copyright © Aditya Sharma</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
